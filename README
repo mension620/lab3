@@ -1,0 +1,17 @@
+class cow 包含了下面的函數：
+
+public:
+void setCowNumber(int x)        設定牛牛的數量
+void setCowWeight(int y)        設定牛的體重，將之以push_back()函數導入vector中
+void clearVectorCowWeight()     初始化vector:cowWeight
+void sortVectorCowWeight()      將牛隻的體重降冪排列
+int getSumCowWeightTopFive()    將前五隻最重的牛體重相加
+
+private:
+int cowNumber;                  牛的數量
+vector <int> cowWeight;         牛的體重
+
+
+一開始程式無論怎麼跑，出來的結果都是0。
+後來發現，自己誤解了vector.resize()的意思。
+修改過後程式即可正常執行。
